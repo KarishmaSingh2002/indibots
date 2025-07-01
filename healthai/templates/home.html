@@ -243,48 +243,7 @@
 
 
     
- <script>
-  (function () {
-    const botKey = "IwAjNxpXCWQ8gAsNm6p2iHfK2bhJVRxF";  // Replace with real key
-    const iframeUrl = "https://aisearchlibrary.in/embed_chatbot/?key="+botKey;
 
-    const iframe = document.createElement("iframe");
-    iframe.src = iframeUrl;
-    iframe.style.position = "fixed";
-    iframe.style.bottom = "20px";
-    iframe.style.right = "20px";
-    iframe.style.width = "350px";
-    iframe.style.height = "500px";
-    iframe.style.border = "none";
-    iframe.style.borderRadius = "12px";
-    iframe.style.boxShadow = "0 0 10px rgba(0,0,0,0.2)";
-    iframe.style.zIndex = "9999";
-    iframe.style.display = "none"; // Start hidden
-
-    const toggleBtn = document.createElement("button");
-    toggleBtn.innerText = "💬";
-    toggleBtn.style.position = "fixed";
-    toggleBtn.style.bottom = "20px";
-    toggleBtn.style.right = "20px";
-    toggleBtn.style.zIndex = "10000";
-    toggleBtn.style.border = "none";
-    toggleBtn.style.borderRadius = "50%";
-    toggleBtn.style.width = "60px";
-    toggleBtn.style.height = "60px";
-    toggleBtn.style.backgroundColor = "#4a90e2";
-    toggleBtn.style.color = "white";
-    toggleBtn.style.fontSize = "24px";
-    toggleBtn.style.cursor = "pointer";
-    toggleBtn.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
-
-    toggleBtn.onclick = function () {
-      iframe.style.display = iframe.style.display === "none" ? "block" : "none";
-    };
-
-    document.body.appendChild(toggleBtn);
-    document.body.appendChild(iframe);
-  })();
- </script>
 
 
 <!-- FontAwesome for Icons -->
